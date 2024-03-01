@@ -1,4 +1,4 @@
-export interface Options {
+export interface MongoOptions {
   mongoUrl: string
   dbName: string
 }

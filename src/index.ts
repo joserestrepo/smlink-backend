@@ -11,5 +11,5 @@ async function main() {
     dbName: envs.MONGO_BD_NAME,
     mongoUrl: envs.MONGO_URL,
   })
-  new ServerApp({ port: Number(envs.PORT), router: AppRoutes.routes }).start()
+  new ServerApp({ port: envs.PORT, router: AppRoutes.routes }).start()
 }
